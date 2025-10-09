@@ -1,4 +1,4 @@
-### Linux Productivy Apps
+### Linux Productivity Apps
 (For Students, Programmers, and Data's People)
 
 # Flow Chart Maker
@@ -105,3 +105,15 @@ digraph T5 {
 
 ### **Output**
 ![Flow chart maker Output Example](examples/T5%20architecture.png)
+
+
+---
+
+# Local OCR
+For people who needs offline image to text converter.
+
+### Usage Guide
+- You can **load** image from file menu or just directly **paste** it from clipboard.
+- Then click perform OCR button and text from image will appear.
+
+*Note : For better quality use high quality image*
