@@ -1,7 +1,7 @@
 ### Linux Productivity Apps
 (For Students, Programmers, and Data's People)
 
-# Flow Chart Maker
+# 1. Flow Chart Maker
 For people who want chatgpt to generate flow charts.
 
 How to Generate
@@ -109,7 +109,7 @@ digraph T5 {
 
 ---
 
-# Local OCR
+# 2. Local OCR
 For people who needs offline image to text converter.
 
 ### Usage Guide
@@ -117,3 +117,66 @@ For people who needs offline image to text converter.
 - Then click perform OCR button and text from image will appear.
 
 *Note : For better quality use high quality image*
+
+---
+
+## How to create executable files and run on your systems.
+
+Requirements
+
+- Python 3.8+ 
+- PyQt6
+- Pillow
+- pytesseract
+- Graphviz (for Flowchart Maker)
+- Tesseract OCR (for OCR Tool)
+
+
+Install all Python deps in projects .venv:
+
+```bash
+pip install PyQt6 pillow pytesseract
+```
+
+
+### System Libraries
+
+### Linux (Ubuntu / Fedora)
+Use apt or dnf to install system packages
+
+```bash
+# Ubuntu
+sudo apt install graphviz tesseract-ocr
+
+# Fedora
+sudo dnf install graphviz tesseract
+```
+
+### Build Executables :
+In your projects virtual environment install pyinstaller and create executable like that :
+```bash
+pip install pyinstaller
+pyinstaller --onefile --windowed flow_chart_maker/flow_chart_maker.py
+pyinstaller --onefile --windowed OCR/main.py
+```
+
+### For Windows
+Windows
+
+Install Python.
+Install Graphviz.
+Install Tessaract OCR.
+
+Add all to path.
+
+then follow the same process as linux.
+
+### MacOS
+Use brew to install system packages :
+
+```bash
+brew install python3 graphviz tesseract
+pip3 install PyQt6 pillow pytesseract
+```
+
+Follow the same process as in linux for creating executable files.
